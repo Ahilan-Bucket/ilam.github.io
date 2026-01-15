@@ -6,42 +6,54 @@
   <title>AKF – Ahilan Kumaresan Foundation</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="dark">
   <header>
     <h1>AKF – Ahilan Kumaresan Foundation</h1>
-    <p>Science. Justice. Community.</p>
+    <p>Science • Justice • Community</p>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a physicist, musician, and abolitionist building AKF to unite frontier science with grassroots liberation.</p>
-    <p>This is where I document experiments, share music, and develop technology for marginalized communities.</p>
-    <p>Something I want to work on is a flood level simulator for Chennai, to make sure right resources are formed ahead of time.</p>
+    <h2>About</h2>
+    <p>
+      I am a physics undergraduate working at the intersection of computational science,
+      social justice, and community-focused technology.
+    </p>
+    <p>
+      AKF is a personal research and creative space where I document experiments,
+      develop computational tools, and explore how scientific methods can be made
+      useful beyond academic boundaries.
+    </p>
+    <p>
+      One long-term project I am developing is a flood-level simulation framework for
+      Chennai, designed to support early warning, resource planning, and decision-making
+      in informal settlements where conventional data sources are limited.
+    </p>
   </section>
 
   <section id="pictures">
     <h2>Visual Diary</h2>
-    <p>Some glimpses from my journey so far...</p>
+    <p>Moments from my work across labs, communities, and performance spaces.</p>
     <div class="gallery">
       <div class="img-wrapper">
-        <img src="images/photo1.jpg" alt="Lab Work" />
-        <div class="caption">Lab Work</div>
+        <img src="images/photo1.jpg" alt="Physics Lab Work" />
+        <div class="caption">Physics & Computational Experiments</div>
       </div>
       <div class="img-wrapper">
-        <img src="images/photo2.jpg" alt="Community Meeting" />
-        <div class="caption">Community Meeting</div>
+        <img src="images/photo2.jpg" alt="Community Work" />
+        <div class="caption">Community-Centered Projects</div>
       </div>
       <div class="img-wrapper">
         <img src="images/photo3.jpg" alt="Music Performance" />
-        <div class="caption">Music Performance</div>
+        <div class="caption">Music & Cultural Practice</div>
       </div>
     </div>
   </section>
 
   <section id="snippets">
-    <h2>One-liners that Ground Me</h2>
+    <h2>Notes to Self</h2>
     <div id="quote-rotator">
-      <p class="quote">“I study the universe not to escape it, but to heal it.”</p>
+      <p class="quote">“I study the universe not to escape it, but to understand how we live within it.”</p>
     </div>
   </section>
 
@@ -50,12 +62,12 @@
   </footer>
 
   <script>
-    // Quote rotator logic
     const quotes = [
-      "“I study the universe not to escape it, but to heal it.”",
-      "“Every curiosity is revolutionary.”",
-      "“Build tools for the people who were told they don’t belong in the lab.”"
+      "“I study the universe not to escape it, but to understand how we live within it.”",
+      "“Every good model is an act of care.”",
+      "“Build tools that work where data is missing.”"
     ];
+
     let current = 0;
     const quoteEl = document.querySelector('#quote-rotator .quote');
 
@@ -64,7 +76,7 @@
       quoteEl.textContent = quotes[current];
     }
 
-    setInterval(nextQuote, 4000);  // Change every 4 seconds
+    setInterval(nextQuote, 4000);
   </script>
 </body>
 </html>
